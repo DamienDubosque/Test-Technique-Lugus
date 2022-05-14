@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0 3rem;
+}
+
+.titre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+h1{
+    font-size: 3.6rem;
+}
+.prix{
+    padding: 0.4rem 1.4rem;
+    color: white;
+    font-size: 1.8rem;
+    background: #142E2c;
+    border-radius: 0.6rem;
+
+}
+.couleur{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.couleur>div{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+}
+.couleur>div:not(:last-of-type){
+    margin-right: 4rem;
+}
+.green{
+    background: #65CA8D;
+}
+.blue{
+    background: #56AEFF;
+}
+.yellow{
+    background: #FFE380;
+}
+.red{
+    background: #FF5858;
+}
+.pointure{
+    font-size: 2.4rem;
+    border: 3px solid #142E2c;
+    border-radius: 0.6rem;
+    padding: 0 2.5rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    background: white;
+    font-weight: 600;
+}
+.pointure:not(:first-of-type){
+    margin-left: 1rem;
+
+}
+.desc{
+    font-size: 14px;
+    margin: 3rem 0 6rem 0;
+    font-weight: 400;
+    line-height: 2.24rem;
+}
+.active{
+
+    background: white;
+
+}
+.color-center{
+    z-index: 1;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top:1rem;
+    left: 1rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: 8rem auto 4rem auto;
+}
+.bouton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.taille{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.add{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+    background-color: #65CA8D;
+    border-radius: 3rem;
+    padding: 1.4rem 8.8rem;
+    border: none;
+    cursor: pointer;
+}
+.add:active{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    transition: 0.2s ease;
+
+}
+.btn-out{
+    background-color: #d5d5d5;
+}
+.taille-out{
+    border-color: #d5d5d5;
+    color: #d5d5d5;
+    background-color: white;
+}
+.selected{
+    background-color: #142E2c;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .taille{
+        display: flex;
+        justify-content: center;
+    }
+    .bouton
+}
+@media (min-width: 1272px){
+    html{
+        height: 100vh;
+    }
+    body{
+        margin: 0;
+    }
+    h1{
+        font-size: 4.8rem;
+    }
+    .taille, .couleur{
+        justify-content: flex-start;
+    }
+    .bouton{
+        align-items: flex-start;
+    }
+    .desc{
+        line-height: 2.88rem;
+    }
+    .prix, .pointure{
+        font-size: 2.4rem;
+    }
+    .desc{
+        font-size: 1.8rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 88vw;
+        height: 100vh;
+        margin: 0 6vw;
+    }
+    .chaussure, .attribut{
+        width: 50%;
+    }
+    img{
+        margin: 0 auto;
+    }
+    .attribut{
+        margin-left: 8rem;
+    }
+    .titre{
+        flex-direction: row;
+    }
+    .titre h1{
+        margin-right: 3rem;
+    }
+}
+@media (min-width: 1440px){
+    .container{
+        width: 80vw;
+        margin: 0 10vw;
+    }
+}
